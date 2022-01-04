@@ -8,7 +8,7 @@ Convensión para genrar los estilos:
 */
 
 :root {
-  --bitcoin-orange: ##f7931a;
+  --bitcoin-orange: #f7931a;
   --soft-orange: #ffe9d5;
   --secondary-blue: #1a9af7;
   --soft-blue: #e7f5ff;
@@ -128,14 +128,14 @@ main {
 }
 
 .main-exchange-container .backgroundImg {
-   width: 200px;
-   height: 200px;
-   margin: 0 auto;
-   margin-bottom: 50px;
-   background-image: url('./assets/imgs/bitcoin.svg');
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  background-image: url("./assets/imgs/bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .main-exchange-container h2 {
@@ -154,3 +154,42 @@ main {
   color: #757575;
 }
 
+.main-currency-table {
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.main-currency-table .currency-table__title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+  text-align: left;
+}
+
+.currency-table__containter {
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.currency-table__containter table {
+  width: 100%;
+  height: 100%;
+}
+
+.currency-table__containter td {
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  background: var(--just-white);
+}
