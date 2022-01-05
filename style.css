@@ -15,7 +15,7 @@ Convensión para genrar los estilos:
   --warn-black: #201e1c;
   --black: #282623;
   --grey: #bababa;
-  --off-white: #faf8f7;
+  --off-white: #FAF8F7;
   --just-white: #ffffff;
 }
 
@@ -261,3 +261,4 @@ main {
 .currency-table__date--commission {
   background-color: var(--soft-blue);
 }
+
