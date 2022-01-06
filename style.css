@@ -154,13 +154,23 @@ main {
   color: #757575;
 }
 
+.main-tables-container {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
 .main-currency-table {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
+  
 }
 
 .main-currency-table .currency-table__title {
