@@ -417,13 +417,41 @@ main {
   color: #757575;
 }
 
+.plans-container__slider {
+  /* 
+  Se genera un owerflox arriba de nuestras tarjetas 
+  el contenido es más grande que el mismo elemento
+  padre.
+  */
+  display: flex; 
+  /*
+  gap: 50px; 
+  validar factibilidad en los navegador
+  can i used
+  */
+  height: 316px;
+  /* 
+  Las tarjetas tienen un alto de 250px este contenedor
+  tiene que ser un poco más alto
+   */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  /* 
+  Para que funcione nuestras tarjetas (plans-container__card
+  deben tener un 
+  scroll-snap-align: center;
+  */
+}
+
 .plans-container__card {
   position: relative;
+  scroll-snap-align: center;
   width: 70%;
-  min-width: 230px;
+  min-width: 190px;
   max-width: 300px;
   height: 250px;
-  margin: 50px auto 0;
+  margin: 50px 5px 0;
   padding: 0 15px;
   background-color: var(--just-white);
   border-radius: 15px;
@@ -439,7 +467,7 @@ main {
   top: -15px;
   left: calc(50% - 60px);
   font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--bitcoin-orange);
   border-radius: 8px;
   color: var(--just-white);
@@ -470,7 +498,7 @@ main {
   /*La altura de la línea del texto es igual a la altura del texto (sería algo así como sacarle el padding  top y bottom a una caja)*/
   line-height: 1;
   top: 20%;
-  left: calc(50% - 45px)
+  left: calc(50% - 45px);
 }
 
 .plan-card__saving {
@@ -478,7 +506,7 @@ main {
   color: #757575;
 }
 
-.plan-card__ca{
+.plan-card__ca {
   width: 150px;
   height: 48px;
   margin-top: 20px;
@@ -496,9 +524,10 @@ main {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background-image: url('./assets/icons/arrow-right.svg');
+  background-image: url("./assets/icons/arrow-right-orange.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: text-bottom;
 }
+
