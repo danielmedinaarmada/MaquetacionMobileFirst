@@ -1,0 +1,8 @@
+.main-tables-container { 
+  width: 630px;
+  margin: 0 auto;
+}
+
+.main-currency-table {
+  flex: 0 0 0;
+}
