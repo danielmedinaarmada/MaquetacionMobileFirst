@@ -6,3 +6,7 @@
 .main-currency-table {
   flex: 0 0 0;
 }
+
+.bitcoin-img-container {
+  background-image: url("../assets/imgs/bitcoinbaby2x.jpg");
+}
