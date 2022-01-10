@@ -120,13 +120,6 @@ main {
   text-align: center;
 }
 
-.main-exchange-containter__title {
-  width: 90%;
-  min-width: 288px;
-  max-width: 900px;
-  margin: 0 auto; /* como no va a ocupar el 100% se posiciona en el centro  */
-}
-
 .main-exchange-container .backgroundImg {
   width: 200px;
   height: 200px;
@@ -136,6 +129,13 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.main-exchange-containter__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto; /* como no va a ocupar el 100% se posiciona en el centro  */
 }
 
 .main-exchange-container h2 {
@@ -381,7 +381,12 @@ main {
   width: 100%;
   min-width: 320px;
   height: 50vh;
-  background-image: url("../assets/imgs/bitcoinbaby.jpg");
+  background-image: url("../assets/imgs/bitcoinbaby.png");
+  /* 
+  efecto parallax
+  pueden usar la propiedad background-attachment: fixed en la imagen de background
+  https://lesterpaz99.github.io/Batatabit/
+  background-attachment: fixed; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -492,12 +497,12 @@ main {
 }
 
 .plan-card__price {
+  position: relative;
   padding: 5px 0;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
   color: var(--black);
-  position: relative;
 }
 
 .plan-card__price span {
